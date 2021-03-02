@@ -1,0 +1,25 @@
+﻿@using TasksWeb.Model
+@model IEnumerable<TasksWeb.Model.TaskModel>
+@{
+    ViewBag.Title = "Tasks";
+}
+
+<h2>Tasks</h2>
+
+<table class="table-fill">
+    <thead>
+        <tr>
+            <th class="text-left">
+                @Html.DisplayNameFor(model => model.DisplayName)
+            </th>
+            <th class="text-left">
+                @Html.DisplayNameFor(model => model.Priority)
+            </th>
+            <th class="text-left">
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+
+            <th class="text-left">Actions</th>
+        </tr>
+   
+</table>
